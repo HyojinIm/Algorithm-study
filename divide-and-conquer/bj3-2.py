@@ -6,9 +6,9 @@ num = [0, 0, 0]
 
 def cut(startX, startY, n):
     global num
-    first = paper[startX][startY]
-    for i in range(startX, startX+n):
-        for j in range(startY, startY+n):
+    first = paper[startY][startX]
+    for i in range(startY, startY+n):
+        for j in range(startX, startX+n):
             if paper[i][j] != first:
                 for a in range(3):
                     for b in range(3):

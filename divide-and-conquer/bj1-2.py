@@ -8,9 +8,9 @@ blue = 0
 def cut(startX, startY, n):
     global white
     global blue
-    num = paper[startX][startY]
-    for i in range(startX, startX+n):
-        for j in range(startY, startY+n):
+    num = paper[startY][startX]
+    for i in range(startY, startY+n):
+        for j in range(startX, startX+n):
             if paper[i][j] != num:
                 for a in range(2):
                     for b in range(2):
